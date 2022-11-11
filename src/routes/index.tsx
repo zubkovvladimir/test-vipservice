@@ -13,7 +13,7 @@ const routes: RouteObject[] = [
     element: <MainLayout />,
     children: [
       {
-        path: Routes.main,
+        path: Routes.avia,
         element: <AviaPage />,
       },
       {

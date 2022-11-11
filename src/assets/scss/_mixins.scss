@@ -1,4 +1,4 @@
-@import "./variables";
+@import './variables';
 
 @mixin for-phone-only {
   @media (max-width: $sm) {
@@ -23,5 +23,14 @@
 @mixin for-big-desktop-up {
   @media (min-width: $xxl) {
     @content;
+  }
+}
+
+@mixin font-face($font-name, $path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $font-name;
+    src: url($path + '.woff') format('woff'), url($path + '.woff2') format('woff2');
+    font-weight: $weight;
+    font-style: $style;
   }
 }

@@ -1,4 +1,4 @@
 export enum Routes {
   main = '/',
-  login = '/login',
+  avia = 'avia',
 }
